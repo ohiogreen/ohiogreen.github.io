@@ -1,0 +1,118 @@
+// Global styling for this template
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  @include serif-font;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: $primary;
+}
+
+hr.light {
+  border-color: $white;
+}
+
+a {
+  color: $primary;
+  @include transition-all;
+  &:hover {
+    color: darken($primary, .1);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include sans-serif-font;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.bg-dark {
+  background-color: $gray-900 !important;
+}
+
+.text-faded {
+  color: fade-out($white, .3);
+}
+
+.main-logo {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 100%;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+.section-heading {
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: $white;
+  background: $gray-900;
+  text-shadow: none;
+}
+
+::selection {
+  color: $white;
+  background: $gray-900;
+  text-shadow: none;
+}
+
+img::selection {
+  color: $white;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: $white;
+  background: transparent;
+}
+
+ul, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.banner {
+  padding: 1rem 0;
+  padding-top: 2rem;
+  background-color: $black;
+  color: $white;
+  font-weight: bold;
+}
+
+.banner-alt {
+  background-color: $pure-apple;
+  color: $white;
+}
+
+.portfolio-box {
+  text-align: center;
+}
+
+#schedule-widget {
+  padding: 2rem 0;
+}

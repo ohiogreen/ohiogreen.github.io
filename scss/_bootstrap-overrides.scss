@@ -1,0 +1,99 @@
+// Bootstrap overrides for this template
+.text-primary {
+  color: $primary !important;
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  @include sans-serif-font;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: darken($primary, 5%) !important;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(240, 95, 64,.5) !important;
+  }
+}
+
+.btn-greensea {
+  color: $greensea;
+  &:hover,
+  &:focus,
+  &:active {
+    background: darken($greensea, 5%) !important;
+  }
+}
+
+.text-greensea {
+  color: $greensea;
+}
+
+.btn-emerald {
+  color: $emerald;
+  &:hover,
+  &:focus,
+  &:active {
+    background: darken($emerald, 5%) !important;
+  }
+}
+
+.btn-mountain-meadow {
+  color: $mountain-meadow;
+  &:hover,
+  &:focus,
+  &:active {
+    background: darken($mountain-meadow, 5%) !important;
+  }
+}
+
+.btn-pure-apple {
+  color: $pure-apple;
+  &:hover,
+  &:focus,
+  &:active {
+    background: darken($pure-apple, 5%) !important;
+  }
+}
+
+.btn-skirret-green {
+  color: $skirret-green;
+  &:hover,
+  &:focus,
+  &:active {
+    background: darken($skirret-green, 5%) !important;
+  }
+}
+
+.btn-aurora-green {
+  color: $aurora-green;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $black;
+    background: darken($aurora-green, 5%) !important;
+  }
+}
+
+.btn-pixelated-glass {
+  color: $pixelated-glass;
+  &:hover,
+  &:focus,
+  &:active {
+    background: darken($pixelated-glass, 5%) !important;
+  }
+}
